@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jack's Demo Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <img src="https://i.ibb.co/GVshrnr/white-laptop-computer-on-white-table-3787306.jpg" alt="oopsie">
-    <h1>Jack Ratner</h1>
-    <h2>Software Engineer</h2>
-    <h3>Brooklyn</h3>
+    <div class="banner">
+      <div id="banner-background"></div>
+      <div class="banner-text">
+        <h1 class="name">Jack Ratner</h1>
+        <h2 class="profession">Software Engineer</h2> 
+      </div> 
+    </div>
+  
+    <ul class="outer-ul">
+      <li class="outer-li">
+        <h3 class="section-header">About Me</h3>
+        <p class="sub-section">
+          The name's Jack. When at work I write code for modern web applications. Outside of work I enjoy running, teaching folks to code, and consuming all the fine kinds of content our society provides these days.
+        </p>
+      </li>
+
+      <li class="outer-li">
+        <h3 class="section-header">My Background</h3>
+        <p class="sub-section">
+          Since graduating from college I've been working for a few startups as a web developer. I enjoy working on smaller teams where individual efforts can show greater rewards for the organization.
+        </p>
+      </li>
+
+      <li class="outer-li">
+        <h3 class="section-header">My Projects</h3>
+        <p class="sub-section">
+          I've dabbled in a few things over the years...
+        </p>
+        <ul class="inner-ul">
+          <li class="inner-li">
+            <a href="https://github.com/jackrr/mta" target="_blank">
+              An API for getting up-to-date subway schedules
+            </a>
+            . You can also view it
+            <a href="http://subway.jackratner.com">
+              in your browser
+            </a>
+          </li>  
+          <li class="inner-li" target="_blank">
+            <a href="https://github.com/jackrr/sketcher">
+              A collaborative web-based sketching tool. You only get a github link because it's broken :)
+            </a>
+          </li>  
+        </ul>
+      </li>
+
+      <li class="outer-li">
+        <h3 class="section-header">My Interests</h3>
+        <p class="sub-section">
+          I love music, cooking, the great outdoors, long stays on the couch, grey suits, sandwiches, etc etc.
+        </p>
+      </li>
+    </ul>
     
-    <p>I want to become a better programmer</p>
-    <p>I want to become a better teacher</p>
+    <footer>
+      <div class="footer-text">
+        <h2>Contact me</h2>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:jackratner@gmail.com">jackratner@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ckjackjac">@ckjackjac</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="three.js"></script>
+    <script src="vanta.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
